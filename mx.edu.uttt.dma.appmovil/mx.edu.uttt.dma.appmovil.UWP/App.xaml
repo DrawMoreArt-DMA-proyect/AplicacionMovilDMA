@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="mx.edu.uttt.dma.appmovil.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mx.edu.uttt.dma.appmovil.UWP">
+
+</Application>
