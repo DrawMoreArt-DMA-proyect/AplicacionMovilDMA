@@ -10,7 +10,7 @@ namespace mx.edu.uttt.dma.appmovil
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
