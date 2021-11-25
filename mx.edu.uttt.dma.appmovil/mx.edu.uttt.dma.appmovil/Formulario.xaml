@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mx.edu.uttt.dma.appmovil.Formulario">
+    <Grid Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Registrar usuario" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+               FontSize="Medium"/>
+
+        <Label Text="Usuario" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center"/>
+        <Entry Placeholder="Usuario" Grid.Row="2" Grid.Column="1">
+        </Entry>
+        <Image Grid.Row="2" Grid.Column="2" Source="visa.jpg"/>
+
+        <Label Text="Contraseña" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+        <Entry IsPassword="True"
+               Placeholder="Contraseña"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+        </Entry>
+
+        <Label Text="Correo Electronico" Grid.Row="4" Grid.Column="0" VerticalOptions="Center"/>
+        <Entry Keyboard="Email"
+               Placeholder="Correo Electronico" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+        </Entry>
+
+
+
+        <Button Text="Siguiente" Clicked="NavigateButtonClicked" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="25" 
+                TextColor="White" BackgroundColor="#00AE0C"/>
+
+    </Grid>
+
+</ContentPage>
