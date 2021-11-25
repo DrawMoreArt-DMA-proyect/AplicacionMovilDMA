@@ -33,7 +33,7 @@
 
                                     </Frame>
 
-                                    <Entry Placeholder="Correo" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                    <Entry x:Name="usuarioEntry" Placeholder="Usuario" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
 
                                 </StackLayout>
 
@@ -46,27 +46,26 @@
                                     <Frame BackgroundColor="Green" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
 
                                     </Frame>
-                                    <Entry Placeholder="Contraseña" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                    <Entry x:Name="contrasenaEntry" Placeholder="Contraseña" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
                                 </StackLayout>
 
 
                             </Frame>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="Olvido su contraseña?" HorizontalTextAlignment="End" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold"/>
-
-
+                       
+                            <Button Text="Crear Cuenta" BackgroundColor="White" TextColor="Black" Clicked="OnNavigateButtonClicked" FontAttributes="Bold" CornerRadius="25"/>
 
                         </StackLayout>
 
 
 
 
-                        <Button Text="Acceder" BackgroundColor="Green" TextColor="White" Clicked="OnNavigateButtonClicked" FontAttributes="Bold" CornerRadius="25"/>
+                        <Button Text="Acceder" BackgroundColor="Green" TextColor="White" Clicked="Login_Clicked" FontAttributes="Bold" CornerRadius="25"/>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
 
-                            <Label Text="No tienes cuenta?" HorizontalTextAlignment="End" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                            <Label Text="" x:Name="Mensaje" HorizontalTextAlignment="End" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold"/>
 
 
                         </StackLayout>
