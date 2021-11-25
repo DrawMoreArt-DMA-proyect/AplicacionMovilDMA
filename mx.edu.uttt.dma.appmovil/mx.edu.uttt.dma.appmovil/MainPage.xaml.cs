@@ -14,5 +14,10 @@ namespace mx.edu.uttt.dma.appmovil
         {
             InitializeComponent();
         }
+
+        void OnNavigateButtonClicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Formulario());
+        }
     }
 }
