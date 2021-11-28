@@ -17,6 +17,9 @@
                 <Frame BackgroundColor="White" HasShadow="True" HeightRequest="320" HorizontalOptions="FillAndExpand">
                     <StackLayout>
                         <StackLayout HorizontalOptions="CenterAndExpand">
+
+                            <Label Text=" Hola, Bienvenido" TextColor="DarkBlue" FontSize="Medium" FontAttributes="Bold"/>
+
                             <Label Text=" App Dibujo" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
 
                             <Label Text="Dibuja luego existes" TextColor="Green" FontSize="Default"  FontAttributes="Bold"/>
