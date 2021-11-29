@@ -23,6 +23,10 @@ namespace mx.edu.uttt.dma.appmovil
         {
             Navigation.PushAsync(new Formulario());
         }
+        void FormularioClicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new recuperar());
+        }
 
         private async void Login_Clicked(object sender, EventArgs e)
         {
