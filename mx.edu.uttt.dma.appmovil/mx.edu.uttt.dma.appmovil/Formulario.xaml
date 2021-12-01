@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mx.edu.uttt.dma.appmovil.Formulario">
+    <Grid Padding="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Registrar usuario" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+               FontSize="Medium"/>
+
+        <Label Text="Usuario" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center"/>
+        <Entry Placeholder="Usuario" Grid.Row="2" Grid.Column="1" x:Name="usuarioEntry" >
+        </Entry>
+        <Image Grid.Row="2" Grid.Column="2" Source="visa.jpg"/>
+
+        <Label Text="Contraseña" Grid.Row="3" Grid.Column="0" VerticalOptions="Center"/>
+        <Entry IsPassword="True" x:Name="contrasenaEntry"
+               Placeholder="Contraseña"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+        </Entry>
+        <Entry IsPassword="True" x:Name="repetirEntry"
+               Placeholder="Repetir Contraseña"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+        </Entry>
+        <Label x:Name="labelContrasena" Text="" IsVisible="false" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" TextColor="Red" BackgroundColor="Black"/>
+        <Label Text="Correo Electronico" Grid.Row="6" Grid.Column="0" VerticalOptions="Center"/>
+        <Entry Keyboard="Email" x:Name="correoEntry"
+               Placeholder="Correo Electronico" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2">
+        </Entry>
+
+
+
+        <Button Text="Registrar" Clicked="Login_Clicked" Grid.Row="7" Grid.ColumnSpan="3" CornerRadius="25" 
+                TextColor="White" BackgroundColor="#00AE0C"/>
+
+        <Button Text="Ya tienes cuenta?" Clicked="NavigateButtonClicked" Grid.Row="8" Grid.ColumnSpan="3" CornerRadius="25" 
+                TextColor="Black" BackgroundColor="White"/>
+
+    </Grid>
+
+</ContentPage>

@@ -14,5 +14,21 @@ namespace mx.edu.uttt.dma.appmovil
         {
             InitializeComponent();
         }
+
+        void Login_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Persona());
+        }
+        void OnNavigateButtonClicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Formulario());
+        }
+        void FormularioClicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new recuperar());
+        }
+
+       
     }
 }
+

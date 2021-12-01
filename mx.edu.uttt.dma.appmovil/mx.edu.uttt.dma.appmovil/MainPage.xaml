@@ -3,22 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mx.edu.uttt.dma.appmovil.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout Padding="0">
+
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="Green" HeightRequest="110" HorizontalOptions="FillAndExpand">
+
+
+                </Frame>
+
+            </StackLayout>
+            <StackLayout Margin="15,110,15,0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="320" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+
+                            <Label Text=" Hola, Bienvenido" TextColor="DarkBlue" FontSize="Medium" FontAttributes="Bold"/>
+
+                            <Label Text=" App Dibujo" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+
+                            <Label Text="Dibuja luego existes" TextColor="Green" FontSize="Default"  FontAttributes="Bold"/>
+
+                            <Label Text="Correo y Contraseña" TextColor="Black" FontSize="Default"  FontAttributes="Bold"/>
+
+
+
+                        </StackLayout>
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="Black" CornerRadius="50" Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="Green" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+
+                                    </Frame>
+
+                                    <Entry x:Name="usuarioEntry" Placeholder="Usuario" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+
+                                </StackLayout>
+
+
+
+
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="Black" CornerRadius="50" Padding="0" Margin="0,20,0,0" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="Green" CornerRadius="50" HeightRequest="35" WidthRequest="35" Padding="0" HorizontalOptions="Start" Margin="7,7,0,7">
+
+                                    </Frame>
+                                    <Entry x:Name="contrasenaEntry" Placeholder="Contraseña" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                </StackLayout>
+
+
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+
+                            <Button Text="Crear Cuenta" BackgroundColor="White" TextColor="Black" Clicked="OnNavigateButtonClicked" FontAttributes="Bold" CornerRadius="25"/>
+                            <Button Text="¿Olvidaste tu contraseña?" BackgroundColor="White" TextColor="Black" Clicked="FormularioClicked" FontAttributes="Bold" CornerRadius="25"/>
+
+                        </StackLayout>
+
+
+
+
+                        <Button Text="Acceder" BackgroundColor="Green" TextColor="White" Clicked="Login_Clicked" FontAttributes="Bold" CornerRadius="25"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+
+                            <Label Text="" x:Name="Mensaje" HorizontalTextAlignment="End" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </Grid>
+
+
+
+
+
     </StackLayout>
 
 </ContentPage>

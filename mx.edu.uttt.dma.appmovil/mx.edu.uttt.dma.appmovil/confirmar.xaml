@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mx.edu.uttt.dma.appmovil.confirmar">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Start">
+            <Button Text="Volver" BackgroundColor="#0BF58C" WidthRequest="70"  TextColor="Black" Clicked="regresarclicked" FontAttributes="Bold" ContentLayout="5" HorizontalOptions="Start"/>
+            <Frame BackgroundColor="White" HasShadow="True" HeightRequest="300" HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <Label Text="Por favor, Ingrese un correo valido para enviar la confirmación" TextColor="#4BAD0B" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="Correo Electronico" Grid.Row="6" Grid.Column="0" VerticalOptions="Start"/>
+                    <Entry Keyboard="Email" x:Name="correoEntry"
+               Placeholder="Correo Electronico" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1">
+                    </Entry>
+                    <Button Text="Enviar correo"  Grid.Row="7" Grid.ColumnSpan="3" CornerRadius="25" 
+                TextColor="White" BackgroundColor="#00AE0C"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

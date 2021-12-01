@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mx.edu.uttt.dma.appmovil.Inicio">
+    <Grid Padding="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Label Text=" Usuario" TextColor="Black" FontSize="Header"  FontAttributes="Bold"/>
+
+
+
+
+
+
+
+
+
+        <Button Text="Manejo de comisiones" Grid.Row="5" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+        
+       
+
+
+        <Button Text="Ajuste"  Grid.Row="4" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+        <Button Text="Postea tu trabajo"  Grid.Row="3" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+        
+        <Button Text="Elementos guardados"  Grid.Row="2" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+        <Button Text="Perfil"  Grid.Row="1" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+        <Button Text="Salir de la sesion" Clicked="SalirButtonClicked" Grid.Row="6" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+
+        <Button Text="Buscar"  Grid.Row="15" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Green"/>
+
+        <Button Text="Comision"  Grid.Row="8" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+        <Button Text="Inicio" Clicked="InicioButtonClicked" Grid.Row="7" Grid.ColumnSpan="4" CornerRadius="20" 
+                TextColor="Black" BackgroundColor="Gray"/>
+
+
+
+
+
+
+
+
+    </Grid>
+    
+
+</ContentPage>
