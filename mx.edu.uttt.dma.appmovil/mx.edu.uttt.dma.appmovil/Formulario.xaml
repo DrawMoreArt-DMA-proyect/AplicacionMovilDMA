@@ -42,7 +42,7 @@
         <Entry Keyboard="Email" x:Name="correoEntry"
                Placeholder="Correo Electronico" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2">
         </Entry>
-        
+
 
 
         <Button Text="Registrar" Clicked="Login_Clicked" Grid.Row="7" Grid.ColumnSpan="3" CornerRadius="25" 

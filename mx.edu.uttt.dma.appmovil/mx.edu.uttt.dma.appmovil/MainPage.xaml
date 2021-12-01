@@ -56,7 +56,7 @@
                             </Frame>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                       
+
                             <Button Text="Crear Cuenta" BackgroundColor="White" TextColor="Black" Clicked="OnNavigateButtonClicked" FontAttributes="Bold" CornerRadius="25"/>
                             <Button Text="¿Olvidaste tu contraseña?" BackgroundColor="White" TextColor="Black" Clicked="FormularioClicked" FontAttributes="Bold" CornerRadius="25"/>
 
